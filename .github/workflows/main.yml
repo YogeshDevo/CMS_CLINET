@@ -13,7 +13,7 @@ variables:
   artifactName: 'production-files'
 
 jobs:
-- job: Build_Deploy
+  - job: Build_Deploy
   steps:
   - task: UseNode@1
     inputs:
