@@ -9,9 +9,10 @@ variables:
   nodeVersion: 14.x
   artifactName: production-files
 jobs:
-  - name: Build_Deploy
-    displayName: Build and Deploy
-    steps:
+    Build_Deploy:
+      runs-on: ubuntu-latest
+      
+      steps:
       - task: UseNode@1
         inputs:
           versionSpec: $(nodeVersion)
