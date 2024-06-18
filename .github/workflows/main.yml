@@ -9,7 +9,7 @@ variables:
   nodeVersion: 14.x
   artifactName: production-files
 jobs:
-  - job: Build_Deploy
+  - name: Build_Deploy
     displayName: Build and Deploy
     steps:
       - task: UseNode@1
