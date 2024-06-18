@@ -13,9 +13,9 @@ variables:
   artifactName: 'production-files'
 
 jobs:
-  - job: Build_Deploy
-  steps:
-  - task: UseNode@1
+  name: Build_Deploy
+    steps:
+    - task: UseNode@1
     inputs:
       versionSpec: '$(nodeVersion)'
     displayName: 'Install Node.js'
